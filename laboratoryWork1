@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click Event</title>
+	<style>
+		#target { /*определяем два стиля:
+                    один для состояния по умолчанию элемента #target, а другой для измененного состояния,
+                    которое мы применим при нажатии кнопки\
+                    /*/
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 10px;
+		}
+		
+		#target.changed {
+			background-color: blue;
+			border-radius: 0px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<button id="button">Click me!</button>
+	<div id="target"></div>
+	
+	<script>
+		let clicked = false; //При щелчке кнопки мы переключаем переменную clicked, которая отслеживает, была ли нажата кнопка или нет.
+		
+		document.getElementById('button').addEventListener('click', function() { /* добавляем прослушиватель событий к элементу кнопки с идентификатором "button".
+        он прослушивает событие click и при его срабатывании выполняет функцию внутри обратного вызова.
+        /*/
+			clicked = !clicked;   
+			document.getElementById('target').classList.toggle('changed', clicked);
+            /*classList.toggle(), чтобы добавить или удалить измененный класс 
+            из элемента #target в зависимости от значения clicked. Это применит
+            или удалит измененные стили из элемента.
+            /*/
+	</script>
+</body>
+</html>
