@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
@@ -14,19 +14,19 @@
                 <div class="col-12 col-lg-9 col-xl-7">
                     <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
                         <div class="card-body p-4 p-md-5">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Форма регистрации</h3>
                             <form onsubmit="return validateForm()">
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
                                             <input type="text" id="username" class="form-control form-control-lg" required />
-                                            <label class="form-label" for="username">Username</label>
+                                            <label class="form-label" for="username">Имя пользователя</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
                                             <input type="email" id="emailAddress" class="form-control form-control-lg" required />
-                                            <label class="form-label" for="emailAddress">Email</label>
+                                            <label class="form-label" for="emailAddress">Почта</label>
                                         </div>
                                     </div>
                                 </div>
@@ -34,13 +34,13 @@
                                     <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
                                             <input type="tel" id="phoneNumber" class="form-control form-control-lg" required pattern="^\+7\d{10}$" />
-                                            <label class="form-label" for="phoneNumber">Phone Number (e.g. +71234567890)</label>
+                                            <label class="form-label" for="phoneNumber">Номер телефона (пример +71234567890)</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
                                             <input type="number" id="age" class="form-control form-control-lg" required min="18" max="90" />
-                                            <label class="form-label" for="age">Age</label>
+                                            <label class="form-label" for="age">Возраст</label>
                                         </div>
                                     </div>
                                 </div>
