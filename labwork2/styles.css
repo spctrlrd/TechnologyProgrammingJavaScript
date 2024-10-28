@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.low {
+    background-color: #c8e6c9; /* Light green */
+}
+.medium {
+    background-color: #ffecb3; /* Light yellow */
+}
+.high {
+    background-color: #ffcdd2; /* Light red */
+}
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: #ddd;
+    margin: 5px;
+}
