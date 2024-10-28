@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Categorization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Product Prices</h1>
+    <table id="priceTable">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product A</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Product C</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Product D</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>Product E</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="categorizeButton">Categorize Prices</button>
+
+    <div>
+        <span class="badge" id="lowCount">Low: 0</span>
+        <span class="badge" id="mediumCount">Medium: 0</span>
+        <span class="badge" id="highCount">High: 0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
