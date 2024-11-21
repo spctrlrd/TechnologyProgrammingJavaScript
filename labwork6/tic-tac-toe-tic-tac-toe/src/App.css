@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.board {
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+}
